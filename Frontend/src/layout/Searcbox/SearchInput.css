@@ -1,0 +1,34 @@
+.custom-select {
+  padding: 25px 20px !important;
+  /* Add other styles as needed */
+}
+
+/* CSS */
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  padding: 25px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-select::after {
+  content: "\25BC"; /* Down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.custom-select option {
+  padding: 10px; /* Adjust option padding as needed */
+}

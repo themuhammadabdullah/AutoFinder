@@ -1,0 +1,16 @@
+a {
+  color: #FF5733; /* Change color to a shade of orange */
+}
+
+a:hover {
+  color: #FF5733; /* Change hover color to the same shade of orange */
+}
+
+.centered-content {
+  text-align: center; /* Horizontally center text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Vertically center content */
+  height: 100%; /* Optional: Specify a height to center vertically */
+}

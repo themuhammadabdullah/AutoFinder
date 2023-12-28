@@ -1,0 +1,36 @@
+/* Modal.css */
+.custom-modal {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.app-badge {
+  margin-right: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-close-button:hover {
+  background-color: #aaa;
+}
