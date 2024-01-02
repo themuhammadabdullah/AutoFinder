@@ -1,6 +1,7 @@
 //imports
 import React, { useState, useEffect } from "react";
 import NavHeader from "./NavHeader";
+import logo from "../../assets/images/logo.png";
 
 //material-ui
 import {
@@ -147,10 +148,10 @@ function Navbar() {
               <Grid item xs>
                 <a href="/">
                   <img
-                    src="https://wsa1.pakwheels.com/assets/new-pw-logo-white-b8b4c00b25fde9cc8f514dc4947c266a.svg"
+                    src={logo}
                     alt="logo"
-                    width="150"
-                    height="40"
+                    width="100"
+                    height="100"
                     onClick={handleLogoClick}
                   />
                 </a>
