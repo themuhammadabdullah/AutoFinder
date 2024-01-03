@@ -27,11 +27,13 @@ function BodyStyle() {
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
-                  border: "2px solid black",
                   width: "100%",
-                  boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+                  borderRadius:
+                    "10px" /* Add rounded corners for a softer look */,
+                  boxShadow:
+                    "0 10px 20px rgba(0, 0, 0, 0.3)" /* Increase shadow depth and size */,
                   transition: "transform 0.3s",
-                  minHeight: "200px",
+                  height: "300px",
                 }}
               >
                 <div className="img">
