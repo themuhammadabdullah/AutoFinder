@@ -1,0 +1,32 @@
+.new-cars-by-make-container {
+    padding: 20px;
+}
+
+.logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-card {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo-card:hover {
+    opacity: 0.8;
+}
+
+.logo-img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-name {
+    text-align: center;
+}

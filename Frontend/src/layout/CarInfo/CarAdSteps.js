@@ -1,7 +1,5 @@
-//imports
 import React from "react";
-//material-ui
-import { Avatar, Card } from "@mui/material";
+import { Avatar, Button, Card } from "@mui/material";
 
 const cardStyles = {
   width: "100%",
@@ -31,6 +29,16 @@ function CarAdSteps() {
           Sell your Car in 3 Steps!
         </h2>
         <p>It's free and takes less than a minute</p>
+        <div
+          style={{ display: "flex", justifyContent: "flex-start", gap: "10px" }}
+        >
+          <Button variant="contained" color="primary">
+            Premium Ad
+          </Button>
+          <Button variant="contained" color="secondary">
+            Ad Booster
+          </Button>
+        </div>
         <div style={stepContainerStyles}>
           <div style={stepStyles}>
             <Avatar

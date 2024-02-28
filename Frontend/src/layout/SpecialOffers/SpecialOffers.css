@@ -1,0 +1,33 @@
+.special-offers-container {
+    margin-top: 30px;
+  }
+  
+  .special-offers-heading {
+    font-size: 28px; /* Increased font size for more prominence */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+  }
+  
+  .offer-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Arrange buttons into 2 columns */
+    gap: 10px;
+    justify-content: center; /* Center the buttons horizontally */
+  }
+  
+  .offer-button {
+    background-color: #f7883f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%; /* Make buttons fill the width of their container */
+  }
+  
+  .offer-button:hover {
+    background-color: #f3b860;
+  }
+  
