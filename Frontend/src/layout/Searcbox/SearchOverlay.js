@@ -11,7 +11,7 @@ function SearchOverlay() {
   return (
     <div
       style={{
-        backgroundImage: `url(${BackgroundImage})`, // Use the imported variable or directly write the path
+        backgroundImage: `url()`, // Use the imported variable or directly write the path
         backgroundSize: "cover", // Adjust the image size as needed
         backgroundRepeat: "no-repeat", // Prevent image repetition
         minHeight: "100vh",

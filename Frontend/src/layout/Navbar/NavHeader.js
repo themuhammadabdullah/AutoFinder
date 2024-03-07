@@ -202,10 +202,11 @@ function NavHeader() {
             >
               <a
                 style={{
-                  color: "#fff",
+                  color: "black",
                   textDecoration: "none",
                   marginRight: "7px",
                   cursor: "pointer",
+                  fontWeight: "bold",
                 }}
                 onClick={openSignupSigninModal}
               >

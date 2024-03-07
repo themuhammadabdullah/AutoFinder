@@ -320,9 +320,7 @@ const HomeWidgetModal = ({ isOpen, closeModal }) => {
             ) : showLoginForm ? (
               <>
                 <form onSubmit={loginHandler}>
-                  <h2 className="text-center text-primary font-weight-bold">
-                    Login
-                  </h2>
+                  <h2 className="text-center font-weight-bold">Login</h2>
                   <div className="form-group">
                     <label htmlFor="loginEmail">Email Address</label>
                     <input

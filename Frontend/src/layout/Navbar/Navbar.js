@@ -167,9 +167,10 @@ function Navbar() {
                       color: "white",
                       textAlign: "center",
                       boxShadow: "none",
+                      fontWeight: "bold",
                       border:
                         activeTab === "Used Cars" ? "1px solid white" : "none",
-                      color: activeTab === "Used Cars" ? "red" : "white",
+                      color: activeTab === "Used Cars" ? "red" : "black",
                     }}
                     onClick={() => handleOptionClick("Used Cars")}
                   >
@@ -186,9 +187,10 @@ function Navbar() {
                       color: "white",
                       textAlign: "center",
                       boxShadow: "none",
+                      fontWeight: "bold",
                       border:
                         activeTab === "Used Bikes" ? "1px solid white" : "none",
-                      color: activeTab === "Used Bikes" ? "red" : "white",
+                      color: activeTab === "Used Bikes" ? "red" : "black",
                     }}
                     onClick={() => handleOptionClick("Used Bikes")}
                   >
@@ -206,9 +208,10 @@ function Navbar() {
                       color: "white",
                       textAlign: "center",
                       boxShadow: "none",
+                      fontWeight: "bold",
                       border:
                         activeTab === "AutoStore" ? "1px solid white" : "none",
-                      color: activeTab === "AutoStore" ? "red" : "white",
+                      color: activeTab === "AutoStore" ? "red" : "black",
                     }}
                     onClick={() => handleOptionClick("AutoStore")}
                   >
@@ -225,9 +228,10 @@ function Navbar() {
                       color: "white",
                       textAlign: "center",
                       boxShadow: "none",
+                      fontWeight: "bold",
                       border:
                         activeTab === "Videos" ? "1px solid white" : "none",
-                      color: activeTab === "Videos" ? "red" : "white",
+                      color: activeTab === "Videos" ? "red" : "black",
                     }}
                     onClick={() => handleOptionClick("Videos")}
                   >
@@ -239,7 +243,7 @@ function Navbar() {
                 <Button
                   variant="contained"
                   style={{
-                    backgroundColor: "#B73439",
+                    backgroundColor: "#Ac3803",
                     borderRadius: "10px",
                     height: "40px",
                     color: "white",
@@ -247,6 +251,7 @@ function Navbar() {
                     boxShadow: "none",
                     outline: "none",
                     border: "none",
+                    fontWeight: "bold",
                   }}
                   onClick={sellCarOpener}
                 >

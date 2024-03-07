@@ -18,6 +18,11 @@
   height: auto;
 }
 
+
+.text-fire {
+  color: #ff5733; /* This is a shade of orange-red. You can adjust the color code to your preference. */
+}
+
 .content__form {
   display: flex;
   flex-direction: column;
@@ -133,3 +138,4 @@
   background: rgb(0, 149, 246);
   opacity: 0.7;
 }
+

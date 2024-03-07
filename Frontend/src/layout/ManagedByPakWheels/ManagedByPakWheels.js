@@ -40,12 +40,40 @@ const ManagedByPakWheels = () => {
       price: "PKR 3,000,000",
       city: "Rawalpindi",
     },
+    {
+      id: 1,
+      image: "car1.jpg",
+      name: "Toyota Corolla",
+      price: "PKR 2,000,000",
+      city: "Karachi",
+    },
+    {
+      id: 2,
+      image: "car2.jpg",
+      name: "Honda Civic",
+      price: "PKR 2,500,000",
+      city: "Lahore",
+    },
+    {
+      id: 3,
+      image: "car3.jpg",
+      name: "Suzuki Cultus",
+      price: "PKR 1,200,000",
+      city: "Islamabad",
+    },
+    {
+      id: 4,
+      image: "car4.jpg",
+      name: "Kia Sportage",
+      price: "PKR 3,000,000",
+      city: "Rawalpindi",
+    },
     // Add more dummy data as needed
   ];
 
   return (
     <div className="managed-by-pakwheels">
-      <h2 className="section-title">Managed By Pak Wheels</h2>
+      <h2 className="section-title">Managed By Auto Finder</h2>
       <div className="card-container" ref={cardContainerRef}>
         {cars.map((car) => (
           <div key={car.id} className="card">

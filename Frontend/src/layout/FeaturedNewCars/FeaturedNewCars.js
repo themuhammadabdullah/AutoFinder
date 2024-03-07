@@ -13,7 +13,15 @@ const FeaturedNewCars = () => {
 
   return (
     <div className="featured-new-cars">
-      <h2>Featured New Cars</h2>
+      <h2
+        style={{
+          color: "#Ac3803",
+          fontSize: "35px",
+          fontWeight: "bold",
+        }}
+      >
+        Featured New Cars
+      </h2>
       <Paper>
         <Tabs
           value={activeTab}

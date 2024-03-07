@@ -37,12 +37,19 @@ function Homewidget() {
             padding: "3em",
           }}
         >
-          <Typography variant="h5" component="h2" align="center" gutterBottom>
+          <Typography
+            style={{ color: "#5c5a55" }}
+            variant="h5"
+            component="h2"
+            align="center"
+            gutterBottom
+          >
             Sell Your Car on Auto Finder and Get the Best Price
           </Typography>
           <Grid container spacing={2} mt={4}>
             <Grid item xs={12} sm={5}>
               <Typography
+                style={{ color: "#5c5a55" }}
                 variant="h6"
                 component="h3"
                 color="primary"
@@ -80,7 +87,11 @@ function Homewidget() {
               )}
             </Grid>
             <Grid item xs={12} sm={2} align="center">
-              <Typography variant="h6" gutterBottom>
+              <Typography
+                style={{ color: "#5c5a55" }}
+                variant="h6"
+                gutterBottom
+              >
                 OR
               </Typography>
             </Grid>

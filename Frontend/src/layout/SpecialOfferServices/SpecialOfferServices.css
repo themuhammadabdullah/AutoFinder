@@ -1,0 +1,144 @@
+.special-offer-services-container {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #5c5a55;
+  font-weight: bold; /* Makes text bold */
+  margin-top: 2rem; /* Adds margin to the top of headings */
+  margin-bottom: 2rem; /* Adds margin to the bottom of headings */
+}
+
+.button-post-ad {
+  background-color: #Ac3803;
+  color: white;
+  padding: 10px 40px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%; /* Makes the button horizontally long */
+  display: block; /* Needed to center the text inside the button */
+  margin: 20px 430px; /* Adds margin above and below the button */
+}
+
+.button-services {
+  background-color: #Ac3803;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Makes each button take the full width */
+  margin: 10px auto; /* Adds margin above and below each button and auto centers it */
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.card {
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+ul {
+  list-style-type: decimal;
+}
+
+.button-next{
+  background-color: #Ac3803;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Makes each button take the full width */
+  margin: 10px 20px; /* Adds margin above and below each button and auto centers it */
+
+}
+
+
+.button-previous {
+  background-color: #Ac3803;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Makes each button take the full width */
+  margin: 10px auto; /* Adds margin above and below each button and auto centers it */
+  
+}
+
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 600px;
+}
+
+.service-main-image {
+  width: 800px; /* Adjusts the width to fill its container */
+  height: 400px; /* Sets a maximum height for the image */
+  object-fit: cover; /* Ensures the image covers the area, might crop */
+  border-radius: 10px; /* Adds rounded corners to the image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* .card-image {
+  width: 200px; 
+  height: 200px; 
+ object-fit: cover;  
+} */
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.steps-container {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  margin-left: 35%;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the space between the image and the text as needed */
+  margin-bottom: 15px; /* Adds some space between each step */
+}
+
+.step-item img {
+  width: 50px; /* Adjust the size of the images as needed */
+  height: auto;
+}
+
+.step-item p {
+  text-align: center;
+  margin: 0; /* Removes the default margin from the paragraph for better alignment */
+}
+
+.note-paragraph {
+  text-align: center;
+  display: block;
+  margin: 20px auto; /* Centers the paragraph */
+  padding: 20px; /* Adds some padding inside the block */
+  background-color: #f0f0f0; /* A light background color */
+  border: 1px solid #ccc; /* A subtle border */
+  border-radius: 5px; /* Optionally rounds the corners */
+  max-width: 80%; /* Limits the maximum width and helps in centering */
+}

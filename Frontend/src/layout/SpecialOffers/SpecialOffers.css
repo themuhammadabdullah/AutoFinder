@@ -1,33 +1,57 @@
 .special-offers-container {
-    margin-top: 30px;
-  }
-  
-  .special-offers-heading {
-    font-size: 28px; /* Increased font size for more prominence */
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center; /* Center the heading */
-  }
-  
-  .offer-buttons-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Arrange buttons into 2 columns */
-    gap: 10px;
-    justify-content: center; /* Center the buttons horizontally */
-  }
-  
-  .offer-button {
-    background-color: #f7883f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    width: 100%; /* Make buttons fill the width of their container */
-  }
-  
-  .offer-button:hover {
-    background-color: #f3b860;
-  }
-  
+  margin-top: 30px;
+}
+
+.special-offers-heading {
+  font-size: 35px;
+  font-weight: bold; /* Increased font size for more prominence */
+  color: #Ac3803;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+/* Updated class for the cards container */
+.offer-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive cards layout */
+  gap: 20px;
+  justify-content: center; /* Center the cards horizontally */
+  padding: 0 20px; /* Add some padding on the sides */
+}
+
+/* New class for individual offer cards */
+.offer-card {
+  background-color: #fff; /* Card background color */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 8px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensure contents do not overflow the card's boundary */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center the text inside the card */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.offer-card:hover {
+  transform: scale(1.05); /* Slightly scale up cards on hover for effect */
+}
+
+.offer-image {
+  width: 100px; /* Ensure image covers the width of the card */
+  height: 100px; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Separator between image and text */
+}
+
+/* Styling for the title (h4) and description (h2) inside the card */
+.offer-card h4, .offer-card h2 {
+  margin: 10px 0; /* Add some margin around the text */
+}
+
+.offer-card h4 {
+  font-size: 18px; /* Slightly larger font size for the title */
+  color: #333; /* Dark color for the title */
+}
+
+.offer-card h2 {
+  font-size: 16px; /* Appropriate font size for the description */
+  color: #777; /* Lighter color for the description */
+  font-weight: normal; /* Normal font weight for the description */
+}

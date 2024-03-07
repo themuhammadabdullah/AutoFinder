@@ -4,8 +4,9 @@
     padding: 20px;
   }
   .container h1 {
-    font-size: 36px; /* Increase font size */
-    color: #333; /* Change text color */
+    font-size: 36px;
+    font-weight: bold; /* Increase font size */
+    color: #Ac3803; /* Change text color */
     text-align: center; /* Center the heading */
     margin-bottom: 20px; /* Add some space below the heading */
     text-transform: uppercase; /* Convert text to uppercase */
@@ -20,7 +21,7 @@
   }
   
   .navigation-bar button {
-    background-color: #e98c35;
+    background-color: #Ac3803;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -31,7 +32,7 @@
   }
   
   .navigation-bar button.active {
-    background-color: #e69a54;
+    background-color: #e27713;
   }
   
   .cards-container {

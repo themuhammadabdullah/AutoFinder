@@ -99,7 +99,7 @@ function Searchbox() {
           variant="h1" // Use h1 for a title
           align="center"
           style={{
-            color: "red",
+            color: "#Ac3803",
             marginTop: "-1em",
             marginBottom: "30px",
             fontFamily: "Arial",
@@ -110,9 +110,9 @@ function Searchbox() {
           AUTOFINDER
         </Typography>
         <Typography
-          variant="h3"
+          variant="h4"
           align="center"
-          style={{ color: "#fff", marginTop: "-1em" }}
+          style={{ color: "#5c5a55", marginTop: "-1em" }}
         >
           Find a Car that suits you
         </Typography>
@@ -120,14 +120,16 @@ function Searchbox() {
         <Typography
           variant="body1"
           align="center"
-          style={{ color: "#fff", padding: "1em" }}
+          style={{ color: "#5c5a55", padding: "1em" }}
         >
           With thousands of cars, we have just the right one for you
         </Typography>
         <Box mt={2} style={{ marginTop: "2em" }}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={3}>
-              <label style={{ color: "#fff" }}>Available In</label>
+              <label style={{ color: "black", fontWeight: "bold" }}>
+                Available In
+              </label>
               <Select
                 style={{ width: "14em", backgroundColor: "white" }}
                 name="city"
@@ -143,7 +145,9 @@ function Searchbox() {
               </Select>
             </Grid>
             <Grid item xs={12} sm={3}>
-              <label style={{ color: "#fff" }}>Price range</label>
+              <label style={{ color: "black", fontWeight: "bold" }}>
+                Price range
+              </label>
               <div style={{ display: "flex" }}>
                 <Select
                   style={{ width: "7em", backgroundColor: "white" }}
@@ -190,7 +194,9 @@ function Searchbox() {
               </div>
             </Grid>
             <Grid item xs={12} sm={3}>
-              <label style={{ color: "#fff" }}>Engine Capacity</label>
+              <label style={{ color: "black", fontWeight: "bold" }}>
+                Engine Capacity
+              </label>
               <Select
                 style={{ width: "14em", backgroundColor: "white" }}
                 name="engineCapacity"
@@ -211,7 +217,13 @@ function Searchbox() {
                 fullWidth
                 color="warning"
                 startIcon={<i className="fa fa-search"></i>}
-                style={{ padding: "1em", outline: "none", border: "none" }}
+                style={{
+                  padding: "1em",
+                  outline: "none",
+                  border: "none",
+                  fontWeight: "bold",
+                  backgroundColor: "#Ac3803",
+                }}
                 onClick={handleSearch}
               >
                 Search

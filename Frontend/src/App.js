@@ -1,10 +1,10 @@
-//imports
 import React from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
+  Switch,
 } from "react-router-dom";
 import "./App.css";
 import EmailValidationPage from "./layout/emailValidation/EmailValidationPage";
@@ -25,14 +25,18 @@ import MyCart from "./layout/Cart/MyCart";
 import CheckoutPage from "./layout/Cart/CheckoutPage";
 import Myorders from "./pages/Myorders";
 import ForgetPasswordPage from "./layout/ForgetPassword/ForgetPasswordPage";
-//hooks
+
+import SpecialOffers from "./layout/SpecialOffers/SpecialOffers";
+import SpecialOfferServices from "./layout/SpecialOfferServices/SpecialOfferServices";
+import PremiumAdService from "./layout/PremiumAdService/PremiumAdService";
+import ListItForYou from "./layout/ListItForYou/ListItForYou";
+import CarInspection from "./layout/CarInspection/CarInspection";
+
+import CompaniesDescriptionPage from "./layout/CompaniesDescriptionPage/CompaniesDescriptionPage";
+
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-
-//store
 import { AdminLoggedIn } from "./store/adminSlice";
-
-//utils
 import useAuth from "./utils/useAuth";
 
 function App() {
@@ -54,7 +58,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/verify" element=<EmailValidationPage /> />
+        <Route path="/verify" element={<EmailValidationPage />} />
         <Route
           path="/profile/:userId"
           element={user ? <Profile /> : <Navigate to="/" />}
@@ -88,16 +92,14 @@ function App() {
           element={user ? <CheckoutPage /> : <Navigate to="/" />}
         />
 
-        <Route path="/used-cars" element=<AllUsedCars /> />
+        <Route path="/used-cars" element={<AllUsedCars />} />
         <Route
           path="/forget-password"
           element={!user ? <ForgetPasswordPage /> : <Navigate to="/" />}
         />
-        <Route path="/used-cars" element=<AllUsedCars /> />
-
-        <Route path="/used-bikes" element=<AllUsedBikes /> />
-        <Route path="/autostore" element=<AllProducts /> />
-        <Route path="/videos" element=<ShowAllVideos /> />
+        <Route path="/used-bikes" element={<AllUsedBikes />} />
+        <Route path="/autostore" element={<AllProducts />} />
+        <Route path="/videos" element={<ShowAllVideos />} />
 
         <Route
           path="/admin/*"
@@ -112,6 +114,12 @@ function App() {
           }
         />
         <Route path="/admin" element={<AdminLogin />} />
+
+        <Route path="/free-ad-service" element={<SpecialOfferServices />} />
+        <Route path="/premium-ad-service" element={<PremiumAdService />} />
+        <Route path="/list-it-for-you" element={<ListItForYou />} />
+        <Route path="/car-inspection" element={<CarInspection />} />
+
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

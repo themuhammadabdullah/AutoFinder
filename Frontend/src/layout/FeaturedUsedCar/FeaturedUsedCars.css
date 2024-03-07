@@ -3,8 +3,10 @@
   }
   
   .section-title {
-    font-size: 24px;
+    font-size: 35px;
     margin-bottom: 15px;
+    font-weight: bold;
+    color: #Ac3803;
   }
   
   .card-container {
@@ -60,7 +62,7 @@
   .next-button {
     padding: 10px 20px;
     margin: 0 10px; /* Add margin between the buttons */
-    background-color: #007bff;
+    background-color: #Ac3803;
     color: #fff;
     border: none;
     border-radius: 5px;
