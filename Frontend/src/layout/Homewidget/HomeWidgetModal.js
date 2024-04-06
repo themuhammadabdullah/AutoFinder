@@ -427,17 +427,29 @@ const HomeWidgetModal = ({ isOpen, closeModal }) => {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
+
                   <div className="form-group">
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="phoneNumber">phone Number</label>
                     <input
                       required
-                      type="password"
+                      type="phonenumber"
                       className="form-control"
-                      id="password"
-                      placeholder="Set a new password"
-                      onChange={(e) => setPassword(e.target.value)}
+                      id="phoneNumber"
+                      placeholder="Enter your phone number"
                     />
                   </div>
+
+                  <div className="form-group">
+                    <label htmlFor="address">Address</label>
+                    <input
+                      required
+                      type="address"
+                      className="form-control"
+                      id="address"
+                      placeholder="Enter your address"
+                    />
+                  </div>
+
                   <div className="form-group">
                     <label htmlFor="confirmPassword">Confirm Password</label>
                     <input
@@ -457,7 +469,10 @@ const HomeWidgetModal = ({ isOpen, closeModal }) => {
                     </div>
                   )}
                   <div className="mt-3 text-center">
-                    <button className="btn btn-link" onClick={toggleLoginForm}>
+                    <button
+                      className="btn btn-link"
+                      onClick={console.log("")}
+                    >
                       Already have an account? Log In
                     </button>
                   </div>

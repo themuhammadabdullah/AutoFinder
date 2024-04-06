@@ -31,6 +31,7 @@ import SpecialOfferServices from "./layout/SpecialOfferServices/SpecialOfferServ
 import PremiumAdService from "./layout/PremiumAdService/PremiumAdService";
 import ListItForYou from "./layout/ListItForYou/ListItForYou";
 import CarInspection from "./layout/CarInspection/CarInspection";
+import RentACar from "./layout/RentACar/RentACar";
 
 import CompaniesDescriptionPage from "./layout/CompaniesDescriptionPage/CompaniesDescriptionPage";
 
@@ -38,6 +39,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { AdminLoggedIn } from "./store/adminSlice";
 import useAuth from "./utils/useAuth";
+import BuyCarForMe from "./layout/BuyCarForMe/BuyCarForMe";
 
 function App() {
   const user = useSelector((state) => state.authentication.user);
@@ -119,6 +121,8 @@ function App() {
         <Route path="/premium-ad-service" element={<PremiumAdService />} />
         <Route path="/list-it-for-you" element={<ListItForYou />} />
         <Route path="/car-inspection" element={<CarInspection />} />
+        <Route path="/rent-a-car" element={<RentACar />} />
+        <Route path="/buy-car-for-me" element={<BuyCarForMe />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>

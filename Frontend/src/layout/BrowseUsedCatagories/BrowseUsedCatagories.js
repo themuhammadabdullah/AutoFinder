@@ -10,14 +10,6 @@ function App() {
       { name: "Car 2", text: "Lorem ipsum 2", image: "image2.jpg" },
       { name: "Car 3", text: "Lorem ipsum 3", image: "image3.jpg" },
       { name: "Car 4", text: "Lorem ipsum 4", image: "image4.jpg" },
-      { name: "Car 1", text: "Lorem ipsum 1", image: "image1.jpg" },
-      { name: "Car 2", text: "Lorem ipsum 2", image: "image2.jpg" },
-      { name: "Car 3", text: "Lorem ipsum 3", image: "image3.jpg" },
-      { name: "Car 4", text: "Lorem ipsum 4", image: "image4.jpg" },
-      { name: "Car 1", text: "Lorem ipsum 1", image: "image1.jpg" },
-      { name: "Car 2", text: "Lorem ipsum 2", image: "image2.jpg" },
-      { name: "Car 3", text: "Lorem ipsum 3", image: "image3.jpg" },
-      { name: "Car 4", text: "Lorem ipsum 4", image: "image4.jpg" },
     ],
     City: [
       { name: "City 1", text: "Lorem ipsum 5", image: "image5.jpg" },
@@ -68,7 +60,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Browse Used Cars</h1>
+      <h1></h1>
       <nav className="navigation-bar">
         {categories.map((category) => (
           <button

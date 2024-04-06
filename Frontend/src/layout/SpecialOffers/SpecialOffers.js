@@ -48,12 +48,14 @@ function SpecialOffers() {
       image: RentCar, // Directly use the imported image here
       title: "Rent A Car",
       description: "Autofinder Services",
+      link: "rent-a-car",
     },
     {
       id: 6,
       image: BuyCarForMe, // Directly use the imported image here
       title: "Buy Car For Me",
       description: "Autofinder Services",
+      link: "buy-car-for-me",
     },
     // The rest of your services...
   ];

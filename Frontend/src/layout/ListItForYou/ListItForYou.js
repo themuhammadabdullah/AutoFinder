@@ -274,6 +274,19 @@ const ListItForYou = () => {
           Next
         </div>
       </div>
+
+      <div className="sell-car-section" style={{ textAlign: "center" }}>
+        <h2>Looking to Sell Your Car?</h2>
+        <div className="note-paragraph">
+          <h3>Sell today!</h3>
+          <p>
+            Place your add to uncover the best offer from our potential buyers.
+          </p>
+          <a href="/post-ad" className="post-ad-link">
+            Post an Ad right away
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

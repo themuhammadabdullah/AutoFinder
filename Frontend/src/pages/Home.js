@@ -21,11 +21,11 @@ function Home() {
     <div>
       <SearchOverlay />
       <Homewidget />
-      <LatestUsedCarsOverlay />
-      <LatestUsedBikesOverlay />
-      <ExploreProducts />
-      <BodyStyle />
-      <AutoStore />
+      {/* <LatestUsedCarsOverlay /> */}
+      {/* <LatestUsedBikesOverlay /> */}
+      {/* <ExploreProducts /> */}
+      {/* <BodyStyle /> */}
+      {/* <AutoStore /> */}
 
       <BrowseUsedCatagories />
       <SpecialOffers />
@@ -33,8 +33,8 @@ function Home() {
       <FeaturedUsedCars />
       <FeaturedNewCars />
       <NewCarsByMake />
-      <Browsevideos />
-      <GetPakwheels />
+      {/* <Browsevideos /> */}
+      {/* <GetPakwheels /> */}
       <Footer />
     </div>
   );

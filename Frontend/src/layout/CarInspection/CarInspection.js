@@ -7,6 +7,10 @@ import reports from "../../assets/images/reports.png";
 import staff from "../../assets/images/staff.png";
 import inspection from "../../assets/images/inspection.png";
 
+import carUpper from "../../assets/images/carUpper.jpg";
+import inspectionReport from "../../assets/images/inspectionReport.jpg";
+import car from "../../assets/images/car.jpg";
+
 import one from "../../assets/images/number-1.png";
 import two from "../../assets/images/number-2.png";
 import three from "../../assets/images/number-3.png";
@@ -229,15 +233,174 @@ const ListItForYou = () => {
           </p>
         </div>
       </div>
+      <div className="inspection-inclusion-section">
+        <h2 style={{ textAlign: "center" }}>
+          What's included in the Car Inspection?
+        </h2>
+        <div
+          className="content-wrapper"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-around",
+            flexWrap: "wrap",
+            gap: "20px",
+          }}
+        >
+          <img
+            src={carUpper}
+            alt="Included in Car Inspection"
+            style={{
+              maxWidth: "50%",
+              Height: "700px",
+            }}
+          />
+          <div className="text-content" style={{ maxWidth: "45%" }}>
+            <h1>Engine</h1>
+            <p>
+              Utlizing a scanning tool connected to the engine to detect any
+              error codes.
+            </p>
+            <h1>Car Interior</h1>
+            <p>
+              We conduct assesments on various operational car accessories,
+              which encompass air conditioning horn, seatbelts, lock, warning
+              indicators and additional components.
+            </p>
+            <h1>Car Accident Damage Check</h1>
+            <p>
+              we employ a paint depth test to identify prior repairs and
+              scruitinize exposed components. Additionaly, a visual inspection
+              is conducted to identify any signs of car damaging resulting from
+              accidents.
+            </p>
+            <h1>Exterior</h1>
+            <p>
+              We perform inspection detect rust, access prior body repair,
+              evaluate the condtiton of panels and examine the suspension
+              system.
+            </p>
+            <h1>Road Check</h1>
+            <p>
+              We conduct assesments on brake functionality, engine sound, exaust
+              emmissions, road performance, steering and various other aspects.
+            </p>
+            <h1>Tyres Evaluation</h1>
+            <p>
+              We examine the tyres tread depth on your vehicle and we also
+              comapre tyre sizes as needed.
+            </p>
+            <h1>In Case of Hybrid Car</h1>
+            <p>We check hybrid system and hybrid battery percentage.</p>
+          </div>
+        </div>
+      </div>
       <div className="note-paragraph">
-        <h3>Note:</h3>
+        <h3>Summary</h3>
         <p>
-          Our premium service includes professional photo capture, detailed
-          inspections, and listing creation of AUtoFinder's platform. We handle
-          all inquires, manage offers, and negotiate deals on your behalf. With
-          us, you're guaranted a secure payment transfer after finalizing the
-          deal. Sell hassle-free with Autofinder.
+          AutoFinder car inspection serves as a valuable resource for both
+          buyers and sellers in the used car market. It promotes transparency,
+          trust and informed decision making, helping consumers make safer and
+          more confident choices when purchasing a vehicle.
         </p>
+      </div>
+      <h1>Sample AutoFinder Inspection Report</h1>
+      <img
+        src={inspectionReport}
+        alt="Included in Car Inspection"
+        style={{
+          maxWidth: "50%",
+          maxHeight: "200px",
+        }}
+      />
+      <button className="button-post-ad">View Sample Inspection Report</button>
+
+      <div
+        className="inspection-packages-section"
+        style={{ textAlign: "center" }}
+      >
+        <h2>Inspection Packages</h2>
+        <div
+          className="card-container inspection-packages-container"
+          style={{ display: "flex", justifyContent: "space-around" }}
+        >
+          {/* Card 1 */}
+          <div
+            className="card inspection-package-card"
+            style={{
+              width: "300px",
+              height: "300px",
+              boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+              transition: "0.3s",
+              borderRadius: "5px",
+              marginLeft: "200px",
+              padding: "20px",
+              boxSizing: "border-box",
+            }}
+          >
+            <img
+              src={car}
+              alt="Package 1"
+              className="card-image"
+              style={{ width: "100%", height: "60%", marginBottom: "5px" }}
+            />
+            <div className="card-content">
+              <h3>Basic package</h3>
+              <p>Upto 1000cc</p>
+              <button
+                className="button-view-details"
+                style={{
+                  backgroundColor: "#Ac3803",
+                  color: "white",
+                  padding: "10px 20px",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          {/* Card 2 */}
+          <div
+            className="card inspection-package-card"
+            style={{
+              width: "300px",
+              height: "300px",
+              boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+              transition: "0.3s",
+              borderRadius: "5px",
+              marginRight: "200px",
+              padding: "20px",
+              boxSizing: "border-box",
+            }}
+          >
+            <img
+              src={car}
+              alt="Package 2"
+              className="card-image"
+              style={{ width: "100%", height: "60%", marginBottom: "5px" }}
+            />
+            <div className="card-content">
+              <h3>Standard Package</h3>
+              <p>Above 1000cc</p>
+              <button
+                className="button-view-details"
+                style={{
+                  backgroundColor: "#Ac3803",
+                  color: "white",
+                  padding: "10px 20px",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                }}
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <h2>Managed Ads By AutoFinder</h2>
@@ -267,6 +430,19 @@ const ListItForYou = () => {
         </div>
         <div className="button-next" onClick={handleNextClickFeatured}>
           Next
+        </div>
+      </div>
+
+      <div className="sell-car-section" style={{ textAlign: "center" }}>
+        <h2>Looking to Sell Your Car?</h2>
+        <div className="note-paragraph">
+          <h3>Sell today!</h3>
+          <p>
+            Place your add to uncover the best offer from our potential buyers.
+          </p>
+          <a href="/post-ad" className="post-ad-link">
+            Post an Ad right away
+          </a>
         </div>
       </div>
     </div>

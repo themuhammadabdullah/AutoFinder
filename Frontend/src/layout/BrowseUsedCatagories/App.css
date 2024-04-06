@@ -37,7 +37,7 @@
   
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
     justify-items: center; /* Center items horizontally */
   }
@@ -47,8 +47,8 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 120px; /* Set width for square cards */
-    height: 120px; /* Set height for square cards */
+    width: 200px; /* Adjust width of cards */
+    height: 250px; /* Adjust height of cards */
     overflow: hidden; /* Ensure content does not overflow */
   }
   
@@ -74,3 +74,18 @@
     color: #666;
   }
   
+  .content-container {
+    width: 850px;
+    overflow: hidden;
+    overflow-x: scroll;
+    /* border: 1px solid black; */
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 20px; /* Add gap between cards */
+  padding: 20px; /* Add padding to the container */
+  margin-bottom: 20px; /* Add margin below the container */
+  min-width: calc(3 * (200px + 20px)); /* Minimum width to show 3 cards */
+  }
+
+  .content-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+  }
